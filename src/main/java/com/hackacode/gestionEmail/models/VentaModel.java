@@ -11,13 +11,14 @@ import java.sql.Date;
 @NoArgsConstructor
 public class VentaModel {
 
-    private Integer idVenta;
+    private String idVenta;
     private ClienteModel cliente;
     private EmpleadoModel empleado;
-    private ServicioModel Servicio;
+    private ServicioModel servicio;
     private PaqueteModel paquete;
     private String tipoVenta;
     private Date fechaVenta;
     private String medioPago;
+    private Double total;
 
 }

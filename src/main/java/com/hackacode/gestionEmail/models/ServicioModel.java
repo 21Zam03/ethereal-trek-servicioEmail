@@ -11,7 +11,7 @@ import java.sql.Date;
 @NoArgsConstructor
 public class ServicioModel {
 
-    private Integer idServicio;
+    private String idServicio;
     private String nombre;
     private String descripcion;
     private String destiono;

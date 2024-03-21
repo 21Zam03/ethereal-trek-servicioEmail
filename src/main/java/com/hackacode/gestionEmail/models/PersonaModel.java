@@ -18,5 +18,7 @@ public abstract class PersonaModel {
     private String celular;
     private String email;
     private String password;
+    private String direccion;
+    private Boolean enabled;
 
 }
