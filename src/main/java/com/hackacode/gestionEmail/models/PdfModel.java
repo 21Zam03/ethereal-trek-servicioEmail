@@ -23,7 +23,7 @@ public class PdfModel {
             renderer.setDocumentFromString(plantillVenta);
             renderer.layout();
             renderer.createPDF(outputStream);
-            this.guardarPdf("C:/Users/DELL/Desktop/TeamCode/ArchivosPdfs/"+numVenta+" "+nombre+".pdf", outputStream.toByteArray());
+            //this.guardarPdf("C:/Users/DELL/Desktop/TeamCode/ArchivosPdfs/"+numVenta+" "+nombre+".pdf", outputStream.toByteArray());
             return outputStream.toByteArray();
         } catch (Exception e) {
             e.printStackTrace();

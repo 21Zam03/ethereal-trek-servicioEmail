@@ -40,7 +40,7 @@ public class EmailController {
         byte[] pdfData = pdfModel.crearPdf(plantillaVenta, venta.getCliente().getNombre(), venta.getIdVenta().toString());
 
         //Crear el correo electrónico
-        /*MimeMessage correo = javaMailSender.createMimeMessage();
+        MimeMessage correo = javaMailSender.createMimeMessage();
         try {
             // Utilizar MimeMessageHelper para adjuntar el archivo PDF
             MimeMessageHelper helper = new MimeMessageHelper(correo, true);
@@ -59,8 +59,8 @@ public class EmailController {
             return new ResponseEntity<>("Correo enviado con el archivo adjunto", HttpStatus.CREATED);
         } catch (MessagingException e) {
             return new ResponseEntity<>("Error al enviar el correo electrónico: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
-        }*/
-        return new ResponseEntity<>("Correo enviado con el archivo adjunto", HttpStatus.CREATED);
+        }
+        //return new ResponseEntity<>("Correo enviado con el archivo adjunto", HttpStatus.CREATED);
     }
 
 }
